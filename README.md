@@ -3,7 +3,7 @@
 
 Projeto criado para registrar, alterar, remover e autenticar usuarios utilizando Express, JWT( passport ) e banco de dados MySQL com cobertura de testes ( jest ).
 
-O projeto foi construído do zero sem ajuda de boilerplates ou códigos prontos pelo principal motivo de estudo e fundamentos de todas as aplicações envolvidas.
+O projeto foi construído do zero sem ajuda de boilerplates ou códigos prontos pelo principal motivo de estudo e fundamentos de todas as aplicações envolvidas, usei bibliotecas como passport para o jwt e Joi para a validação dos campos, acredito que o tempo de construção do projeto foi de 6 horas.
 
 ## Pré-requisitos
 
@@ -13,7 +13,6 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 - Docker Compose
 - Node.js
 - Banco de Dados MySQL
-
 
 
 Para clonar o projeto:
@@ -48,8 +47,23 @@ ou ```docker compose up```
 ```npm run test``` ou ```npm run test:watch```
 
 
+#### Estrutura das pastas:
+
+- `src/`
+  - `__test__/`
+  - `controllers/`
+  - `db/`
+  - `helpers/`
+  - `middlewares/`
+  - `models/`
+  - `routes/`
+  - `services/`
+  - `validators/`
+
+
 Coisas legais para se implementar no futuro:
 
 - [ ]  maior cobertura de teste com integração e e2e
 - [ ]  pesquisa e paginação
-- [ ]  melhor log de erros 
+- [ ]  melhor log de erros
+- [ ]  melhor validação de campos
